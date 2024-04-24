@@ -460,16 +460,60 @@ img {
 
 .city-sightseeing {
   background-color: var(--belyy);
-  outline: 1px solid purple;
 }
 
-.city-sightseeing-descr__text {
-  max-width: 676px;
-  margin-left: auto;
+.section-descr {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.city-sightseeing-descr--paddings {
   padding-top: 157px;
   padding-bottom: 180.5px;
+}
+
+.section-descr__text {
+  max-width: 676px;
   font-size: 18px;
   line-height: 167%;
+}
+
+.city-sightseeing-item {
+  padding-top: 76px;
+  padding-bottom: 100px;
+  border-top: 0.5px solid var(--solomennyy);
+}
+
+.city-sightseeing-item:last-child {
+  padding-bottom: 0;
+}
+
+.city-sightseeing-content {
+  display: flex;
+}
+
+.city-sightseeing-content__name {
+  width: 187px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  margin-right: 113px;
+}
+
+.city-sightseeing-content__descr {
+  display: flex;
+  gap: 24px;
+}
+
+.city-sightseeing-content__descr-img {
+  display: block;
+}
+
+.city-sightseeing-content__descr-text {
+  max-width: 476px;
+  font-family: var(--font-family);
+  line-height: 162%;
 }
 
 /* ------ CITY-BUDGET SECTION ------ */
@@ -481,6 +525,12 @@ img {
 .section-padding--budget {
   padding-bottom: 200;
 }
+
+.city-budget-descr--paddings {
+  padding-top: 57px;
+  padding-bottom: 200px;
+}
+
 /* ------ CITY-MAP SECTION ------ */
 .city-map {
   padding-top: 24px;
