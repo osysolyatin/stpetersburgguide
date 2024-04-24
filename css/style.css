@@ -1,0 +1,502 @@
+@font-face {
+  font-family: "Prata";
+  src: url(../fonts/Prata/Prata-Regular.woff2) format("woff2"),
+    url(../fonts/Prata/Prata-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Regular.woff2) format("woff2"),
+    url(../fonts/Raleway/Raleway-Regular.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Medium.woff2) format("woff2"),
+    url(../fonts/Raleway/Raleway-Medium.woff) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Light.woff2) format("woff2"),
+    url(../fonts/Raleway/Raleway-Light.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family: "Raleway", sans-serif;
+  --second-family: "Prata", sans-serif;
+  --font-size-main: 16px;
+  --font-size-second: 18px;
+  --chernyy: #000;
+  --solomennyy: #faca47;
+  --belyy: #fff;
+  --cvet-fona: #fdfaf4;
+  --korichnevyy: #ad2d11;
+  --cvet-futera: #181515;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover,
+a:focus-within,
+a:focus-visible,
+a:focus {
+  outline: none;
+}
+
+svg:focus,
+svg:focus-visible,
+svg:focus-within {
+  outline: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.btn-reset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  line-height: 1rem;
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ------ COMON PROPERTIES ------ */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: var(--font-size-main);
+  font-weight: 400;
+  color: var(--chernyy);
+  background-color: var(--cvet-fona);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  padding-left: 95px;
+  padding-right: 95px;
+  margin: 0 auto;
+}
+
+.menu {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--korichnevyy);
+}
+
+.section-padding {
+  padding-top: 124px;
+  padding-bottom: 176px;
+}
+
+/* ------ HEADER SECTION ------ */
+.header {
+  min-height: 732px;
+  padding-left: 195px;
+  padding-right: 195px;
+  background-image: url(../image/header/header_main_foto.png);
+  background-repeat: no-repeat;
+  background-color: wheat;
+}
+.header__menu {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 25px;
+  min-height: 76px;
+}
+.header__menu-nav {
+  margin: 0 auto;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 64px;
+}
+
+.header__line {
+  display: block;
+  outline: 1px solid var(--chernyy);
+  opacity: 0.15;
+}
+/* ------ HERO SECTION ------ */
+.header__hero {
+  min-height: 656px;
+  text-align: center;
+}
+
+.hero__title {
+  padding-top: 232px;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  font-size: 24px;
+}
+/* ------ CITY-ABOUT SECTION ------ */
+.city-about {
+  padding-top: 176px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.city-about__title {
+  padding-left: 95px;
+  margin-bottom: 57px;
+}
+
+/* ------ CITY-ABOUT-SLIDER ------ */
+
+.city-about-swiper-container {
+  padding-right: 95px;
+  padding-bottom: 124px;
+}
+
+.city-about-swiper {
+  position: relative;
+  overflow: hidden;
+}
+
+.city-about-swiper-slide {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-about-swiper-slide__descr {
+  max-width: 376px;
+  padding-bottom: 186px;
+}
+
+.city-about-swiper-slide__text {
+  font-size: 18px;
+  line-height: 144%;
+}
+
+/* ------ CITY-ABOUT-SLIDER-NAVIGATION ------ */
+
+.city-about-btn-navigation {
+  position: absolute;
+  display: flex;
+  gap: 24px;
+  bottom: 100px;
+  left: 895px;
+}
+
+.city-about-swiper-button-prev,
+.city-about-swiper-button-next {
+  z-index: 10;
+}
+
+/* ------ CITY-ABOUT-SLIDER-PAGINATION ------ */
+
+.city-about-swiper-pagination {
+  position: absolute;
+  z-index: 10;
+}
+
+.city-about-swiper-pagination.swiper-pagination-horizontal {
+  /* left: 315px; */
+  left: 25%;
+  bottom: 27px;
+}
+
+.swiper-pagination-bullet {
+  width: 32px;
+  height: 2px;
+  border-radius: 0;
+  opacity: 1;
+  background-color: var(--belyy);
+}
+
+.swiper-pagination-horizontal.city-about-swiper-pagination
+  .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.swiper-pagination-horizontal.city-about-swiper-pagination
+  .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--solomennyy);
+}
+
+/* ------ END CITY-ABOUT-SLIDER ------ */
+
+.city-about__descr {
+  display: flex;
+  align-items: center;
+  min-height: 576px;
+  padding-top: 51px;
+  padding-left: 95px;
+  padding-bottom: 51px;
+  background: url(../image/about/Petr_on_horse.png) no-repeat 1009px 51px,
+    url(../image/about/cup.png) no-repeat 216px 226px;
+  background-color: var(--belyy);
+}
+
+.city-about__text {
+  max-width: 1114px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 169%;
+}
+/* ------ CITY-HISTORY SECTION ------ */
+.city-history {
+  outline: 1px solid rebeccapurple;
+}
+
+.city-history-block {
+  padding: 57px 100px;
+  padding-bottom: 24px;
+}
+
+.city-history-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  counter-reset: cityHistoryItemsCount 0;
+}
+
+.city-history-item {
+  outline: 1px solid red;
+  width: 50%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.city-history-item:before {
+  content: counter(cityHistoryItemsCount);
+  counter-increment: cityHistoryItemsCount 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-family: var(--second-family);
+  font-size: 18px;
+  border: 1px solid darkgreen;
+  border-radius: 100px;
+  background-color: var(--solomennyy);
+  color: var(--belyy);
+  left: calc(100% - 20px);
+}
+
+.city-history-item:nth-child(2n + 1)::before {
+  left: calc(0% - 20px);
+}
+
+.city-history-item:nth-child(2n) {
+  align-self: flex-start;
+}
+
+.city-history-item-descr {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.city-history-item:nth-child(2n) .city-history-item-descr {
+  justify-content: flex-start;
+}
+
+.city-history-item:nth-child(2n + 1) .city-history-item-descr {
+  flex-direction: row-reverse;
+}
+
+.city-history-item-descr__picture {
+  flex-shrink: 0;
+}
+
+.city-history-item-descr-image {
+  display: block;
+  padding: 13px;
+  outline: 1px solid var(--solomennyy);
+  border-radius: 100%;
+}
+
+.city-history-item-descr__events {
+  outline: 1px dashed;
+  width: 100%;
+  /* flex-grow: 1; */
+  text-align: center;
+}
+
+.city-history-item-descr__events-year {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  padding: 12px 21px;
+  color: var(--chernyy);
+  border-bottom: 1px solid var(--solomennyy);
+}
+
+.city-history-item:nth-child(2n + 1) .city-history-item-descr__events-year {
+  padding-left: 41px;
+}
+
+.city-history-item:nth-child(2n) .city-history-item-descr__events-year {
+  padding-right: 41px;
+}
+
+.city-history-item-descr__events-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 137%;
+  padding: 12px 21px;
+  color: var(--chernyy);
+}
+
+.city-history-item:nth-child(2n + 1) .city-history-item-descr__events-text {
+  padding-left: 41px;
+}
+
+.city-history-item:nth-child(2n) .city-history-item-descr__events-text {
+  padding-left: 24px;
+  padding-right: 44px;
+}
+
+.city-history-item:nth-child(2n + 6) .city-history-item-descr__events-text {
+  padding-left: 13px;
+  padding-right: 33px;
+}
+
+/* ------ CITY-SIGHTSEEING SECTION ------ */
+.city-sightseeing {
+  background-color: var(--belyy);
+  outline: 1px solid purple;
+}
+/* ------ CITY-BUDGET SECTION ------ */
+.city-budget {
+  outline: 1px solid green;
+}
+
+.section-padding--budget {
+  padding-bottom: 200;
+}
+/* ------ CITY-MAP SECTION ------ */
+.city-map {
+  padding-top: 24px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.city-map__title {
+  margin-bottom: 57px;
+  padding-left: 95px;
+}
+
+.city-map__image {
+  font-size: 0;
+}
+/* ------ FOOTER SECTION ------ */
+.footer {
+  padding-top: 48px;
+  padding-bottom: 24px;
+  min-height: 200px;
+  color: var(--cvet-fona);
+  background-color: var(--cvet-futera);
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__block-left {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  font-size: 12px;
+}
+
+.footer__text {
+  margin-right: 57px;
+}
+
+.footer__block-right {
+  flex: 1;
+  padding-bottom: 39px;
+  column-count: 2;
+  column-gap: 105px;
+}
+
+.footer__menu {
+  font-weight: 500;
+}
+
+.footer__menu-item:not(:last-child) {
+  margin-bottom: 16px;
+}

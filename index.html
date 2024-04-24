@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>St.Petersburg Guide</title>
+</head>
+
+<body>
+  <header class="header container">
+    <div class="header__menu">
+
+      <nav class="header__menu-nav menu">
+        <ul class="header__menu-list list-reset">
+          <li class="header__menu-item">
+            <a href="#city-about" class="header__menu-link">О&nbsp;городе</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#city-history" class="header__menu-link">История</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#city-sightseeing" class="header__menu-link">Достопримечательности</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#city-budget" class="header__menu-link">Бюджет поездки</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#city-map" class="header__menu-link">Карта Петербурга</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    <span class="header__line"></span>
+
+    <section class="header__hero hero">
+      <h1 class="title hero__title">Путеводитель по&nbsp;Санкт-Петербургу</h1>
+      <p class="hero__text">
+        Рассказываем самое интересное
+      </p>
+    </section>
+  </header>
+  <main>
+    <section class="city-about container" id="city-about">
+
+      <h2 class="title city-about__title">О&nbsp;городе</h2>
+      <div class="city-about-swiper-container">
+
+        <!-- Slider main container -->
+        <div class="city-about-swiper">
+
+          <!-- Additional required wrapper -->
+          <div class="city-about-swiper-wrapper swiper-wrapper">
+            <!-- Slides -->
+            <div class="city-about-swiper-slide swiper-slide">
+
+              <div class="city-about-swiper-slide__img">
+                <picture>
+                  <source
+                    srcset="./image/about/slides-image/Photo1_Peterhof_1x.png 1x, ./image/about/slides-image/Photo1_Peterhof_2x.png 2x"
+                    type="image/webp">
+                  <img src="./image/about/slides-image/Photo1_Peterhof_1x.png" alt="Слайд с фото Петергофа">
+                </picture>
+              </div>
+              <div class="city-about-swiper-slide__descr">
+                <p class="city-about-swiper-slide__text">
+                  Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых городов России, который привлекает туристов
+                  со&nbsp;всего мира своей архитектурой, культурными достопримечательностями и&nbsp;богатой историей.
+                </p>
+              </div>
+
+            </div>
+            <div class="city-about-swiper-slide swiper-slide">
+
+              <div class="city-about-swiper-slide__img">
+                <picture>
+                  <source
+                    srcset="./image/about/slides-image/Photo2_Peter_the_Great_monument_1x.png 1x, ./image/about/slides-image/Photo2_Peter_the_Great_monument_2x.png 2x"
+                    type="image/webp">
+                  <img src="./image/about/slides-image/Photo2_Peter_the_Great_monument_1x.png"
+                    alt="Слайд с фото Памятника Медный всадник">
+                </picture>
+              </div>
+              <div class="city-about-swiper-slide__descr">
+                <p class="city-about-swiper-slide__text">
+                  Город был основан в&nbsp;1703 году Петром I&nbsp;на берегах реки Невы и&nbsp;стал символом силы
+                  и&nbsp;могущества Российской империи.
+                </p>
+              </div>
+
+            </div>
+            <div class="city-about-swiper-slide swiper-slide">
+
+              <div class="city-about-swiper-slide__img">
+                <picture>
+                  <source
+                    srcset="./image/about/slides-image/Photo3_Ship_in_the_port_1x.png 1x, ./image/about/slides-image/Photo3_Ship_in_the_port_2x.png 2x"
+                    type="image/webp">
+                  <img src="./image/about/slides-image/Photo3_Ship_in_the_port_1x.png"
+                    alt="Слайд с фото Памятника Медный всадник">
+                </picture>
+              </div>
+              <div class="city-about-swiper-slide__descr">
+                <p class="city-about-swiper-slide__text">
+                  Сегодня Санкт-Петербург&nbsp;&mdash; это не&nbsp;только культурный центр, но&nbsp;и&nbsp;один
+                  из&nbsp;крупнейших портов мира, который является важным экономическим центром России.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="city-about-swiper-pagination"></div>
+
+          <div class="city-about-btn-navigation">
+
+            <button class="city-about-swiper-button-prev btn-reset" type="button" aria-label="Кнопка слайдера назад">
+              <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="38" cy="38" r="37.75" fill="#FDFAF4" stroke="#AD2D11" stroke-width="0.5" />
+                <path
+                  d="M16.4154 38.0001H59.9241M35.1676 18.9082C35.1676 18.9082 33.7315 25.9574 28.4282 31.2607C23.1249 36.564 16.0757 38.0001 16.0757 38.0001C16.0757 38.0001 22.7605 39.7351 28.3764 44.6439C33.9923 49.5528 36.0437 56.2158 36.0437 56.2158"
+                  stroke="#AD2D11" />
+              </svg>
+            </button>
+            <button class="city-about-swiper-button-next btn-reset" type="button" aria-label="Кнопка слайдера вперед">
+              <svg width="76" height="76" viewBox="0 0 76 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="38" cy="38" r="37.75" fill="#FDFAF4" stroke="#AD2D11" stroke-width="0.5" />
+                <path
+                  d="M59.5844 38.0001H16.0757M40.8322 57.092C40.8322 57.092 42.2682 50.0428 47.5715 44.7395C52.8748 39.4362 59.9241 38.0002 59.9241 38.0002C59.9241 38.0002 53.2393 36.2651 47.6234 31.3563C42.0074 26.4475 39.956 19.7844 39.956 19.7844"
+                  stroke="#AD2D11" />
+              </svg>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="city-about__descr">
+        <p class="city-about__text">
+          В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых интересных местах Санкт-Петербурга, которые
+          обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.
+        </p>
+      </div>
+
+    </section>
+    <section class="city-history section-padding container" id="city-history">
+      <h2 class="title city-history__title">История</h2>
+      <div class="city-history-block">
+
+        <ul class="city-history-list list-reset">
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo1_Petr.png" alt="Фото Петра 1">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">16 (27&nbsp;по&nbsp;новому стилю) мая 1703 года</h3>
+                <p class="city-history-item-descr__events-text">Основание Санкт-Петербурга Петром&nbsp;I</p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo2_city.png"
+                  alt="Фото старого города. Вид на Петропавловскую крепость">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">21&nbsp;мая 1712 года</h3>
+                <p class="city-history-item-descr__events-text">Санкт-Петербург становится официальной столицей России
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo3_year1914.png"
+                  alt="Фото старого города. Вид с Невского проспекта на Гостинный двор">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">1914 год</h3>
+                <p class="city-history-item-descr__events-text">Переименование в&nbsp;Петроград</p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo4_moscow1918.png"
+                  alt="Фото Спасской башни Кремля в Москве">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">1918 год</h3>
+                <p class="city-history-item-descr__events-text">Перенос столицы из&nbsp;Петрограда в&nbsp;Москву</p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo5_newspaper.png"
+                  alt="Фото старой газеты с заголовком Ленинград">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">26&nbsp;января 1924 года</h3>
+                <p class="city-history-item-descr__events-text">Переименование Петрограда в&nbsp;Ленинград в&nbsp;честь
+                  В.И. Ленина</p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo6_war.png"
+                  alt="Фото блокадного Ленинграда">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">8&nbsp;сентября 1941 &mdash; 27&nbsp;января
+                  1944&nbsp;гг
+                </h3>
+                <p class="city-history-item-descr__events-text">Блокада Ленинграда, начатая войсками Финляндии
+                  и&nbsp;Германии</p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo7_medal.png"
+                  alt="Фото медали Героя Советского Союза">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">8&nbsp;мая 1965 года</h3>
+                <p class="city-history-item-descr__events-text">Присвоение городу Ленинграду звания Города-героя.
+                  Ленинград&nbsp;&mdash; город-герой</p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo8_state_emblem.png"
+                  alt="Фото герба РСФСР">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">6&nbsp;сентября 1991 года</h3>
+                <p class="city-history-item-descr__events-text">Возвращение городу прежнего названия Санкт-Петербург,
+                  о&nbsp;чём был подписан Указ Президиума Верховного Совета РСФСР</p>
+              </div>
+            </div>
+          </li>
+          <li class="city-history-item">
+            <div class="city-history-item-descr">
+              <div class="city-history-item-descr__picture">
+                <img class="city-history-item-descr-image" src="image/history/photo9_baby.png"
+                  alt="Фото новорожденного">
+              </div>
+              <div class="city-history-item-descr__events">
+                <h3 class="city-history-item-descr__events-year">22&nbsp;сентября 2012 года</h3>
+                <p class="city-history-item-descr__events-text">Рождение 5-ти миллионного жителя Санкт-Петербурга</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="city-sightseeing section-padding container" id="city-sightseeing">
+      <h2 class="title">Достопримечательности</h2>
+
+    </section>
+    <section class="city-budget section-padding section-padding--budget container" id="city-budget">
+      <h2 class="title">Бюджет поездки</h2>
+
+    </section>
+    <section class="city-map container" id="city-map">
+      <h2 class="title city-map__title">Карта Петербурга</h2>
+      <div class="city-map__image">
+        <picture>
+          <source srcset="./image/map/city-map.png 1x, ./image/map/city-map_2x.png 2x" type="image/webp">
+          <img src="./image/map/city-map.png" alt="Карта Петербурга">
+        </picture>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer container">
+
+    <div class="footer__wrapper">
+      <div class="footer__block-left">
+
+        <p class="footer__text">&copy;&nbsp;2023</p>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+
+      </div>
+      <div class="footer__block-right">
+
+        <nav class="footer__menu menu">
+          <ul class="footer__menu-list list-reset">
+            <li class="footer__menu-item">
+              <a href="#city-about" class="footer__menu-link">О&nbsp;городе</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#city-history" class="footer__menu-link">История</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#city-sightseeing" class="footer__menu-link">Достопримечательности</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#city-budget" class="footer__menu-link">Бюджет поездки</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#city-map" class="footer__menu-link">Карта Петербурга</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+
+    </div>
+
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
