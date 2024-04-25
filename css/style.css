@@ -84,7 +84,9 @@ p,
 h1,
 h2,
 h3,
-h4 {
+h4,
+section,
+body {
   margin: 0;
 }
 
@@ -155,7 +157,7 @@ img {
 }
 
 .section-padding {
-  padding-top: 124px;
+  padding-top: 121px;
   padding-bottom: 176px;
 }
 
@@ -212,9 +214,9 @@ img {
 }
 
 .hero__title {
-  padding-top: 232px;
+  padding-top: 223px;
   font-size: 48px;
-  margin-bottom: 24px;
+  margin-bottom: 5px;
 }
 
 .hero__text {
@@ -222,7 +224,7 @@ img {
 }
 /* ------ CITY-ABOUT SECTION ------ */
 .city-about {
-  padding-top: 176px;
+  padding-top: 200px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -357,11 +359,11 @@ img {
   display: flex;
   align-items: center;
   min-height: 576px;
-  padding-top: 51px;
+  padding-top: 12px;
   padding-left: 95px;
   padding-bottom: 51px;
-  background: url(../image/about/Petr_on_horse.png) no-repeat 1009px 51px,
-    url(../image/about/cup.png) no-repeat 216px 226px;
+  background: url(../image/about/Petr_on_horse.png) no-repeat 1009px 48px,
+    url(../image/about/cup.png) no-repeat 175px 223px;
   background-color: var(--belyy);
 }
 
@@ -394,8 +396,16 @@ img {
 .city-history-item-descr {
   display: flex;
   width: 50%;
-  min-height: 150px;
+  min-height: 200px;
   position: relative;
+}
+
+.city-history-item:nth-child(2n + 1) .city-history-item-descr {
+  min-height: 175px;
+}
+
+.city-history-item:nth-child(2n) .city-history-item-descr {
+  min-height: 224px;
 }
 
 .city-history-item:nth-child(2n + 1) .city-history-item-descr {
@@ -458,6 +468,8 @@ img {
 
 .city-history-item-descr__picture {
   flex-shrink: 0;
+  width: 176px;
+  height: 176px;
 }
 
 .city-history-item-descr-image {
@@ -512,6 +524,15 @@ img {
 .city-history-item:nth-child(2n) .city-history-item-descr__events-text {
   padding-left: 24px;
   padding-right: 44px;
+}
+
+.city-history-item:first-child .city-history-item-descr__events-text {
+  padding-left: 74px;
+  padding-right: 54px;
+}
+
+.city-history-item:nth-child(3) .city-history-item-descr__events-text {
+  padding-left: 74px;
 }
 
 .city-history-item:nth-child(2n + 6) .city-history-item-descr__events-text {
