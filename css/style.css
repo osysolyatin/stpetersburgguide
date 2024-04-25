@@ -518,10 +518,6 @@ img {
 
 /* ------ CITY-BUDGET SECTION ------ */
 
-.city-budget {
-  outline: 1px solid green;
-}
-
 .section-padding--budget {
   padding-bottom: 200;
 }
@@ -529,6 +525,35 @@ img {
 .city-budget-descr--paddings {
   padding-top: 57px;
   padding-bottom: 200px;
+}
+
+.city-budget-cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.city-budget-card {
+  width: 276px;
+  text-align: center;
+}
+
+.city-budget-card__icon {
+  height: 60px;
+  margin-bottom: 34px;
+}
+
+.city-budget-card__title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 144%;
+  margin-bottom: 16px;
+}
+
+.city-budget-card__price {
+  font-family: var(--second-family);
+  font-size: 22px;
+  line-height: 118%;
 }
 
 /* ------ CITY-MAP SECTION ------ */
