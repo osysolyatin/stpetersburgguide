@@ -18,8 +18,6 @@ anchors.forEach((anchor) => {
 const swiper = new Swiper(".city-about-swiper", {
   // Optional parameters
   slidesPerView: 1,
-  // direction: "vertical",
-  // loop: true,
   // If we need pagination
   pagination: {
     el: ".city-about-swiper-pagination",

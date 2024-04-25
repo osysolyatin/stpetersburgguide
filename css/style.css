@@ -57,6 +57,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus-visible {
+  outline: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -115,7 +119,7 @@ h4 {
   margin: -1px;
 }
 
-/* ------ COMON PROPERTIES ------ */
+/* ------ COMON STYLES ------ */
 body {
   font-family: "Raleway", sans-serif;
   font-size: var(--font-size-main);
@@ -155,6 +159,11 @@ img {
   padding-bottom: 176px;
 }
 
+.section-descr {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* ------ HEADER SECTION ------ */
 .header {
   min-height: 732px;
@@ -177,6 +186,18 @@ img {
 .header__menu-list {
   display: flex;
   gap: 64px;
+}
+
+.header__menu-link {
+  transition: color 0.3s ease-in-out;
+}
+.header__menu-link:focus,
+.header__menu-link:hover {
+  color: var(--korichnevyy);
+}
+
+.header__menu-link:active {
+  color: var(--solomennyy);
 }
 
 .header__line {
@@ -248,9 +269,51 @@ img {
   left: 895px;
 }
 
-.city-about-swiper-button-prev,
-.city-about-swiper-button-next {
+.city-about-swiper-buttons {
   z-index: 10;
+}
+
+.city-about-swiper-buttons.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: auto;
+}
+
+.city-about-swiper-button-icon circle {
+  transition: 0.3s ease-in-out;
+}
+
+.city-about-swiper-button-icon path {
+  transition: 0.3s ease-in-out;
+}
+
+.city-about-swiper-buttons:focus .city-about-swiper-button-icon circle {
+  stroke: var(--solomennyy);
+}
+.city-about-swiper-buttons:hover .city-about-swiper-button-icon circle {
+  stroke: var(--solomennyy);
+}
+
+.city-about-swiper-buttons:focus .city-about-swiper-button-icon path {
+  stroke: var(--solomennyy);
+}
+.city-about-swiper-buttons:hover .city-about-swiper-button-icon path {
+  stroke: var(--solomennyy);
+}
+
+.city-about-swiper-buttons:active .city-about-swiper-button-icon circle {
+  stroke: var(--chernyy);
+}
+
+.city-about-swiper-buttons:active .city-about-swiper-button-icon path {
+  stroke: var(--chernyy);
+}
+
+.city-about-swiper-buttons:disabled .city-about-swiper-button-icon circle {
+  stroke: var(--korichnevyy);
+}
+
+.city-about-swiper-buttons:disabled .city-about-swiper-button-icon path {
+  stroke: var(--korichnevyy);
 }
 
 /* ------ CITY-ABOUT-SLIDER-PAGINATION ------ */
@@ -462,12 +525,7 @@ img {
   background-color: var(--belyy);
 }
 
-.section-descr {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.city-sightseeing-descr--paddings {
+.section-descr--city-sightseeing-paddings {
   padding-top: 157px;
   padding-bottom: 180.5px;
 }
@@ -519,10 +577,10 @@ img {
 /* ------ CITY-BUDGET SECTION ------ */
 
 .section-padding--budget {
-  padding-bottom: 200;
+  padding-bottom: 200px;
 }
 
-.city-budget-descr--paddings {
+.section-descr--city-budget-paddings {
   padding-top: 57px;
   padding-bottom: 200px;
 }
@@ -608,4 +666,16 @@ img {
 
 .footer__menu-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.footer__menu-link {
+  transition: color 0.3s ease-in-out;
+}
+.footer__menu-link:focus,
+.footer__menu-link:hover {
+  color: var(--solomennyy);
+}
+
+.footer__menu-link:active {
+  color: var(--korichnevyy);
 }
