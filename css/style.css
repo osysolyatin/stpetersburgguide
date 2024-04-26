@@ -395,18 +395,24 @@ img {
 
 .city-history-item-descr {
   display: flex;
+  align-items: center;
   width: 50%;
   min-height: 200px;
   position: relative;
 }
 
-.city-history-item:nth-child(2n + 1) .city-history-item-descr {
-  min-height: 175px;
+.city-history-item:first-child .city-history-item-descr,
+.city-history-item:last-child .city-history-item-descr {
+  min-height: 186px;
 }
 
-.city-history-item:nth-child(2n) .city-history-item-descr {
+/* .city-history-item:nth-child(2n + 1) .city-history-item-descr {
+  min-height: 175px;
+} */
+
+/* .city-history-item:nth-child(2n) .city-history-item-descr {
   min-height: 224px;
-}
+} */
 
 .city-history-item:nth-child(2n + 1) .city-history-item-descr {
   flex-direction: row-reverse;
@@ -468,12 +474,14 @@ img {
 
 .city-history-item-descr__picture {
   flex-shrink: 0;
-  width: 176px;
-  height: 176px;
+  /* width: 176px;
+  height: 176px; */
 }
 
 .city-history-item-descr-image {
   display: block;
+  width: 176px;
+  height: 176px;
   padding: 13px;
   outline: 1px solid var(--solomennyy);
   border-radius: 100%;
@@ -483,6 +491,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   text-align: center;
 }
 
@@ -501,10 +510,12 @@ img {
 
 .city-history-item:nth-child(2n + 1) .city-history-item-descr__events-year {
   padding-left: 41px;
+  padding-bottom: 10px;
 }
 
 .city-history-item:nth-child(2n) .city-history-item-descr__events-year {
-  padding-right: 41px;
+  padding-right: 40px;
+  padding-bottom: 11px;
 }
 
 .city-history-item-descr__events-text {
