@@ -157,7 +157,7 @@ img {
 }
 
 .section-padding {
-  padding-top: 121px;
+  padding-top: 120px;
   padding-bottom: 176px;
 }
 
@@ -377,7 +377,7 @@ img {
 /* ------ CITY-HISTORY SECTION ------ */
 
 .city-history-block {
-  padding: 57px 100px;
+  padding: 44px 100px;
   padding-bottom: 24px;
 }
 
@@ -403,7 +403,7 @@ img {
 
 .city-history-item:first-child .city-history-item-descr,
 .city-history-item:last-child .city-history-item-descr {
-  min-height: 186px;
+  min-height: 200px;
 }
 
 /* .city-history-item:nth-child(2n + 1) .city-history-item-descr {
@@ -554,12 +554,13 @@ img {
 /* ------ CITY-SIGHTSEEING SECTION ------ */
 
 .city-sightseeing {
+  padding-top: 111px;
   background-color: var(--belyy);
 }
 
 .section-descr--city-sightseeing-paddings {
   padding-top: 157px;
-  padding-bottom: 180.5px;
+  padding-bottom: 179.5px;
 }
 
 .section-descr__text {
@@ -569,8 +570,8 @@ img {
 }
 
 .city-sightseeing-item {
-  padding-top: 76px;
-  padding-bottom: 100px;
+  padding-top: 75.5px;
+  padding-bottom: 99px;
   border-top: 0.5px solid var(--solomennyy);
 }
 
@@ -587,7 +588,7 @@ img {
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 24px;
-  line-height: 100%;
+  line-height: 120%;
   margin-right: 113px;
 }
 
@@ -601,15 +602,17 @@ img {
 }
 
 .city-sightseeing-content__descr-text {
-  max-width: 476px;
+  max-width: 475px;
   font-family: var(--font-family);
   line-height: 162%;
+  margin-top: -6px;
 }
 
 /* ------ CITY-BUDGET SECTION ------ */
 
 .section-padding--budget {
-  padding-bottom: 200px;
+  padding-top: 125px;
+  padding-bottom: 224px;
 }
 
 .section-descr--city-budget-paddings {
@@ -625,12 +628,16 @@ img {
 
 .city-budget-card {
   width: 276px;
+  padding-top: 39px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  padding-right: 27px;
   text-align: center;
 }
 
 .city-budget-card__icon {
   height: 60px;
-  margin-bottom: 34px;
+  margin-bottom: 29px;
 }
 
 .city-budget-card__title {
@@ -654,7 +661,7 @@ img {
 }
 
 .city-map__title {
-  margin-bottom: 57px;
+  margin-bottom: 53px;
   padding-left: 95px;
 }
 
@@ -663,8 +670,6 @@ img {
 }
 /* ------ FOOTER SECTION ------ */
 .footer {
-  padding-top: 48px;
-  padding-bottom: 24px;
   min-height: 200px;
   color: var(--cvet-fona);
   background-color: var(--cvet-futera);
@@ -672,13 +677,17 @@ img {
 
 .footer__wrapper {
   display: flex;
+  padding-top: 38px;
+  padding-bottom: 24px;
+  padding-left: 2px;
+  padding-right: 81px;
 }
 
 .footer__block-left {
   display: flex;
-  flex: 1;
   align-items: flex-end;
   font-size: 12px;
+  margin-right: 321px;
 }
 
 .footer__text {
@@ -686,8 +695,8 @@ img {
 }
 
 .footer__block-right {
-  flex: 1;
-  padding-bottom: 39px;
+  /* flex: 1; */
+  padding-bottom: 25px;
   column-count: 2;
   column-gap: 105px;
 }
