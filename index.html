@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>St.Petersburg Guide</title>
@@ -13,7 +15,7 @@
   <header class="header container">
     <div class="header__menu">
 
-      <nav class="header__menu-nav menu">
+      <nav class="header__menu-nav menu wow fadeInDown">
         <ul class="header__menu-list list-reset">
           <li class="header__menu-item">
             <a href="#city-about" class="header__menu-link">О&nbsp;городе</a>
@@ -37,8 +39,8 @@
     <span class="header__line"></span>
 
     <section class="header__hero hero">
-      <h1 class="title hero__title">Путеводитель по&nbsp;Санкт-Петербургу</h1>
-      <p class="hero__text">
+      <h1 class="title hero__title wow fadeInUp">Путеводитель по&nbsp;Санкт-Петербургу</h1>
+      <p class="hero__text wow fadeInUp" data-wow-delay="0.5s">
         Рассказываем самое интересное
       </p>
     </section>
@@ -46,11 +48,11 @@
   <main>
     <section class="city-about container" id="city-about">
 
-      <h2 class="title city-about__title">О&nbsp;городе</h2>
+      <h2 class="title city-about__title wow fadeInLeft" data-wow-duration="2s">О&nbsp;городе</h2>
       <div class="city-about-swiper-container">
 
         <!-- Slider main container -->
-        <div class="city-about-swiper">
+        <div class="city-about-swiper wow fadeInUp" data-wow-delay="1s">
 
           <!-- Additional required wrapper -->
           <div class="city-about-swiper-wrapper swiper-wrapper">
@@ -144,8 +146,8 @@
 
       </div>
 
-      <div class="city-about__descr">
-        <p class="city-about__text">
+      <div class="city-about__descr wow fadeInRight" data-wow-delay="1.5s">
+        <p class="city-about__text wow fadeInRight">
           В&nbsp;этом путеводителе мы&nbsp;расскажем о&nbsp;самых интересных местах Санкт-Петербурга, которые
           обязательно стоит посетить при поездке в&nbsp;этот прекрасный город.
         </p>
@@ -153,11 +155,11 @@
 
     </section>
     <section class="city-history section-padding container" id="city-history">
-      <h2 class="title city-history__title">История</h2>
+      <h2 class="title city-history__title wow fadeInDown">История</h2>
       <div class="city-history-block">
 
         <ul class="city-history-list list-reset">
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="0.5s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo1_Petr.png" alt="Фото Петра 1">
@@ -168,7 +170,7 @@
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo2_city.png"
@@ -181,7 +183,7 @@
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo3_year1914.png"
@@ -189,11 +191,11 @@
               </div>
               <div class="city-history-item-descr__events">
                 <h4 class="city-history-item-descr__events-year">1914 год</h4>
-                <p class="city-history-item-descr__events-text">Переименование в&nbsp;Петроград</p>
+                <p class="city-history-item-descr__events-text">Переименование&nbsp; в&nbsp;Петроград</p>
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo4_moscow1918.png"
@@ -205,7 +207,7 @@
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo5_newspaper.png"
@@ -213,12 +215,13 @@
               </div>
               <div class="city-history-item-descr__events">
                 <h4 class="city-history-item-descr__events-year">26&nbsp;января 1924 года</h4>
-                <p class="city-history-item-descr__events-text">Переименование Петрограда в&nbsp;Ленинград в&nbsp;честь
+                <p class="city-history-item-descr__events-text">Переименование&nbsp; Петрограда в&nbsp;Ленинград
+                  в&nbsp;честь
                   В.И. Ленина</p>
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo6_war.png"
@@ -233,7 +236,7 @@
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo7_medal.png"
@@ -246,7 +249,7 @@
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo8_state_emblem.png"
@@ -259,7 +262,7 @@
               </div>
             </div>
           </li>
-          <li class="city-history-item">
+          <li class="city-history-item wow fadeInUp" data-wow-delay="1s">
             <div class="city-history-item-descr">
               <div class="city-history-item-descr__picture">
                 <img class="city-history-item-descr-image" src="image/history/photo9_baby.png"
@@ -276,16 +279,16 @@
 
     </section>
     <section class="city-sightseeing section-padding container" id="city-sightseeing">
-      <h2 class="title">Достопримечательности</h2>
+      <h2 class="title wow fadeInLeft">Достопримечательности</h2>
       <div class="section-descr section-descr--city-sightseeing-paddings">
-        <p class="section-descr__text">
+        <p class="section-descr__text wow fadeInRight" data-wow-delay="1s">
           Санкт-Петербург&nbsp;&mdash; город, который известен своими красивыми зданиями, музеями и&nbsp;парками. Это
           один из&nbsp;самых красивых городов России, который привлекает миллионы туристов каждый год. В&nbsp;этой
           статье мы&nbsp;расскажем о&nbsp;самых знаменитых достопримечательностях Санкт-Петербурга.
         </p>
       </div>
       <ul class="city-sightseeing-list list-reset">
-        <li class="city-sightseeing-item">
+        <li class="city-sightseeing-item wow fadeInLeftBig" data-wow-delay="0.5s" data-wow-duration="2s">
           <div class="city-sightseeing-content">
             <h3 class="city-sightseeing-content__name">Эрмитаж</h3>
             <div class="city-sightseeing-content__descr">
@@ -305,7 +308,7 @@
             </div>
           </div>
         </li>
-        <li class="city-sightseeing-item">
+        <li class="city-sightseeing-item wow fadeInRightBig" data-wow-delay="0.5s" data-wow-duration="2s">
           <div class="city-sightseeing-content">
             <h3 class="city-sightseeing-content__name">Дворцовая площадь</h3>
             <div class="city-sightseeing-content__descr">
@@ -326,7 +329,7 @@
             </div>
           </div>
         </li>
-        <li class="city-sightseeing-item">
+        <li class="city-sightseeing-item wow fadeInLeftBig" data-wow-delay="0.5s" data-wow-duration="2s">
           <div class="city-sightseeing-content">
             <h3 class="city-sightseeing-content__name">Зимний дворец</h3>
             <div class="city-sightseeing-content__descr">
@@ -345,7 +348,7 @@
             </div>
           </div>
         </li>
-        <li class="city-sightseeing-item">
+        <li class="city-sightseeing-item wow fadeInRightBig" data-wow-delay="0.5s" data-wow-duration="2s">
           <div class="city-sightseeing-content">
             <h3 class="city-sightseeing-content__name">Петергоф</h3>
             <div class="city-sightseeing-content__descr">
@@ -364,7 +367,7 @@
             </div>
           </div>
         </li>
-        <li class="city-sightseeing-item">
+        <li class="city-sightseeing-item wow fadeInLeftBig" data-wow-delay="0.5s" data-wow-duration="2s">
           <div class="city-sightseeing-content">
             <h3 class="city-sightseeing-content__name">Исаакиевский собор</h3>
             <div class="city-sightseeing-content__descr">
@@ -388,13 +391,13 @@
 
     </section>
     <section class="city-budget section-padding section-padding--budget container" id="city-budget">
-      <h2 class="title">Бюджет поездки</h2>
+      <h2 class="title wow fadeInLeft">Бюджет поездки</h2>
       <div class="section-descr section-descr--city-budget-paddings">
-        <p class="section-descr__text">
+        <p class="section-descr__text wow fadeInRight">
           Перед поездкой необходимо рассчитать приблизительный бюджет, который понадобится вам для путешествия.
         </p>
       </div>
-      <ul class="city-budget-cards list-reset">
+      <ul class="city-budget-cards list-reset wow fadeInUp" data-wow-delay="0.5s">
         <li class="city-budget-card">
           <img src="./image/budget/Hotel.svg" alt="Иконка Отеля" class="city-budget-card__icon">
           <p class="city-budget-card__title">Проживание</p>
@@ -421,8 +424,8 @@
 
     </section>
     <section class="city-map container" id="city-map">
-      <h2 class="title city-map__title">Карта Петербурга</h2>
-      <div class="city-map__image">
+      <h2 class="title city-map__title wow fadeInLeft">Карта Петербурга</h2>
+      <div class="city-map__image wow fadeInUp" data-wow-delay="1s" data-wow-duration="2s">
         <picture>
           <source srcset="./image/map/city-map.png 1x, ./image/map/city-map_2x.png 2x" type="image/webp">
           <img src="./image/map/city-map.png" alt="Карта Петербурга">
@@ -463,6 +466,7 @@
 
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/index.js"></script>
 </body>
 

@@ -85,8 +85,7 @@ h1,
 h2,
 h3,
 h4,
-section,
-body {
+section {
   margin: 0;
 }
 
@@ -157,7 +156,7 @@ img {
 }
 
 .section-padding {
-  padding-top: 120px;
+  padding-top: 127px;
   padding-bottom: 176px;
 }
 
@@ -214,9 +213,9 @@ img {
 }
 
 .hero__title {
-  padding-top: 223px;
+  padding-top: 227px;
   font-size: 48px;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
 }
 
 .hero__text {
@@ -224,7 +223,7 @@ img {
 }
 /* ------ CITY-ABOUT SECTION ------ */
 .city-about {
-  padding-top: 200px;
+  padding-top: 205px;
   padding-left: 0;
   padding-right: 0;
 }
@@ -376,7 +375,7 @@ img {
 /* ------ CITY-HISTORY SECTION ------ */
 
 .city-history-block {
-  padding: 44px 100px;
+  padding: 46px 100px;
   padding-bottom: 24px;
 }
 
@@ -499,12 +498,11 @@ img {
 
 .city-history-item:nth-child(2n + 1) .city-history-item-descr__events-year {
   padding-left: 41px;
-  padding-bottom: 10px;
+  /* padding-bottom: 11px; */
 }
 
 .city-history-item:nth-child(2n) .city-history-item-descr__events-year {
   padding-right: 40px;
-  padding-bottom: 10px;
 }
 
 .city-history-item-descr__events-text {
@@ -544,12 +542,12 @@ img {
 /* ------ CITY-SIGHTSEEING SECTION ------ */
 
 .city-sightseeing {
-  padding-top: 111px;
+  padding-top: 116px;
   background-color: var(--belyy);
 }
 
 .section-descr--city-sightseeing-paddings {
-  padding-top: 157px;
+  padding-top: 158px;
   padding-bottom: 179.5px;
 }
 
@@ -561,7 +559,7 @@ img {
 
 .city-sightseeing-item {
   padding-top: 75.5px;
-  padding-bottom: 99px;
+  padding-bottom: 100px;
   border-top: 0.5px solid var(--solomennyy);
 }
 
@@ -601,13 +599,13 @@ img {
 /* ------ CITY-BUDGET SECTION ------ */
 
 .section-padding--budget {
-  padding-top: 125px;
+  padding-top: 129px;
   padding-bottom: 224px;
 }
 
 .section-descr--city-budget-paddings {
-  padding-top: 57px;
-  padding-bottom: 200px;
+  padding-top: 59px;
+  padding-bottom: 201px;
 }
 
 .city-budget-cards {
@@ -645,13 +643,13 @@ img {
 
 /* ------ CITY-MAP SECTION ------ */
 .city-map {
-  padding-top: 24px;
+  padding-top: 28px;
   padding-left: 0;
   padding-right: 0;
 }
 
 .city-map__title {
-  margin-bottom: 53px;
+  margin-bottom: 57px;
   padding-left: 95px;
 }
 
@@ -670,7 +668,7 @@ img {
 .footer__menu-wrapper {
   padding-left: 601px;
   padding-right: 81px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
 }
 
 .footer__info-block {

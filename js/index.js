@@ -31,3 +31,8 @@ const swiper = new Swiper(".city-about-swiper", {
     prevEl: ".city-about-swiper-button-prev",
   },
 });
+
+// WoW-animation effects
+
+const wow = new WOW();
+wow.init();
