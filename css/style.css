@@ -326,7 +326,6 @@ img {
 }
 
 .city-about-swiper-pagination.swiper-pagination-horizontal {
-  /* left: 315px; */
   left: 25%;
   bottom: 27px;
 }
@@ -401,17 +400,9 @@ img {
   position: relative;
 }
 
-.city-history-item:first-child .city-history-item-descr,
+/* .city-history-item:first-child .city-history-item-descr,
 .city-history-item:last-child .city-history-item-descr {
   min-height: 200px;
-}
-
-/* .city-history-item:nth-child(2n + 1) .city-history-item-descr {
-  min-height: 175px;
-} */
-
-/* .city-history-item:nth-child(2n) .city-history-item-descr {
-  min-height: 224px;
 } */
 
 .city-history-item:nth-child(2n + 1) .city-history-item-descr {
@@ -474,8 +465,6 @@ img {
 
 .city-history-item-descr__picture {
   flex-shrink: 0;
-  /* width: 176px;
-  height: 176px; */
 }
 
 .city-history-item-descr-image {
@@ -515,7 +504,7 @@ img {
 
 .city-history-item:nth-child(2n) .city-history-item-descr__events-year {
   padding-right: 40px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
 }
 
 .city-history-item-descr__events-text {
@@ -544,6 +533,7 @@ img {
 
 .city-history-item:nth-child(3) .city-history-item-descr__events-text {
   padding-left: 74px;
+  padding-right: 54px;
 }
 
 .city-history-item:nth-child(2n + 6) .city-history-item-descr__events-text {
@@ -671,38 +661,32 @@ img {
 /* ------ FOOTER SECTION ------ */
 .footer {
   min-height: 200px;
+  padding-top: 38px;
+  padding-bottom: 24px;
   color: var(--cvet-fona);
   background-color: var(--cvet-futera);
 }
 
-.footer__wrapper {
-  display: flex;
-  padding-top: 38px;
-  padding-bottom: 24px;
-  padding-left: 2px;
+.footer__menu-wrapper {
+  padding-left: 601px;
   padding-right: 81px;
+  padding-bottom: 25px;
 }
 
-.footer__block-left {
+.footer__info-block {
   display: flex;
-  align-items: flex-end;
   font-size: 12px;
-  margin-right: 321px;
+  padding-left: 2px;
 }
 
 .footer__text {
-  margin-right: 57px;
-}
-
-.footer__block-right {
-  /* flex: 1; */
-  padding-bottom: 25px;
-  column-count: 2;
-  column-gap: 105px;
+  margin-right: 59px;
 }
 
 .footer__menu {
   font-weight: 500;
+  column-count: 2;
+  column-gap: 105px;
 }
 
 .footer__menu-item:not(:last-child) {
